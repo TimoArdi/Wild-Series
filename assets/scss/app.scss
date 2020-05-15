@@ -1,0 +1,14 @@
+@import "bootswatch/variables";
+@import "~bootstrap/scss/bootstrap";
+@import "bootswatch/bootswatch";
+$primary:(#f5bdbd);
+$secondary:(#ee9191);
+body {
+    background-color: white;
+        h1{
+            color: $secondary;
+        }
+}
+.bg-dark {
+    background-color: $primary !important ;
+}
