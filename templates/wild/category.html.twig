@@ -1,12 +1,12 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}All programs{% endblock %}
+{% block title %}Category{% endblock %}
 
 {% block body %}
     <h1>Series :</h1>
     {% for program in programs %}
         <div>
-            <h2>{{ loop.index }} / {{ program.title }} - Catégorie : {{ program.category.name }}</h2>
+            <h2>{{ program.id }} / {{ program.title }}</h2>
             <p>{{ program.summary }}</p>
         </div>
     {% else %}
