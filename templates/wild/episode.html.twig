@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <div>
+        <a href="{{ path('wild_program', { 'slug': program.title }) }}">
+            <h1> {{ program.title }}</h1></a>
+           <a href="{{ path('show_season', {seasonId: season.id}) }}" > Saison : {{ season.number }}</a>
+      </h1>
+    </div>
+
+    <div>
+        <h2> Episode : {{ episode.title }} </h2>
+
+        <p>Synopsis : {{ episode.synopsis }}</p>
+
+    </div>
+
+    <a href="{{ path('app_index') }}">
+        Page d'accueil
+    </a>
+
+
+{% endblock %}
