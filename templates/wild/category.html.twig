@@ -1,15 +1,13 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}All programs{% endblock %}
+{% block title %}Category{% endblock %}
 
 {% block body %}
-    <h1>Séries :</h1>
+    <h1>Series :</h1>
     {% for program in programs %}
         <div>
-            <a href="{{ path('wild_program', { 'slug': program.title }) }}">
-            <h2>{{ loop.index }} / {{ program.title }} </a> - Catégorie : {{ program.category.name }}</h2>
+            <h2>{{ program.id }} / {{ program.title }}</h2>
             <p>{{ program.summary }}</p>
-
         </div>
     {% else %}
         Aucune série trouvée.
