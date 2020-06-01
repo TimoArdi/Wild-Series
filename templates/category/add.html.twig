@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Add Category{% endblock %}
+
+{% block body %}
+
+    <div class="form-group">
+        {{ form_start(form) }}
+        {{ form_row(form.name) }}
+        <button class="btn btn-secondary m-2">{{ button_label|default('Save') }}</button>
+        {{ form_end(form) }}
+    </div>
+    <a href="{{ path('app_index') }}">
+        Retour à l'accueil
+    </a>
+{% endblock %}
