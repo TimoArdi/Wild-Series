@@ -18,7 +18,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class ActorController extends AbstractController
 {
     /**
-     * @Route("/{id}", name="actor_show", methods={"GET"})
+     * @Route("/{slug}", name="actor_show", methods={"GET"})
      * @param Actor $actor
      * @return Response
      */
